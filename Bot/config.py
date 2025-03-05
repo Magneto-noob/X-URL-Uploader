@@ -17,21 +17,21 @@ class Config(object):
         BotCommand('broadcast', 'broadcast message')
     ]
 
-    DUMP_ID = int(os.environ.get("DUMP_ID", 0))
+    DUMP_ID = "-1001567964220"
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = "2049170894:AAEtQ6CFBPqhR4api99FqmO56xArWcE0H-o"
 
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = "15523035"
+    API_HASH = "33a37e968712427c2e7971cb03f341b3"
 
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
         "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", None) else None
 
-    OWNER_ID = int(os.environ.get('OWNER_ID'))
+    OWNER_ID = "910674886"
 
     # MongoDB
-    DATABASE_URL = os.environ.get("DATABASE_URL")
+    DATABASE_URL = "mongodb+srv://TGBot:Save@koyeb.vvt99ro.mongodb.net/?retryWrites=true&w=majority&appName=Koyeb"
 
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
